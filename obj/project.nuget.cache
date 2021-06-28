@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ObmNDpIp3mj6TTQ64eteikvPpNwZBNwv3Tn89QjgG9JkIqRpOJwN7neKcTI4onVvfKAJsCCKDl3wOLcghw44cw==",
+  "dgSpecHash": "qJZ5Q/03WUm8SSCbllCFTE4179SXhLJtIqr7gZGavErNVmaygrI6JpbkEZc6NnrCn2UnZJFNayvMU8Un39RnjA==",
   "success": true,
-  "projectFilePath": "E:\\repo\\BombBot\\BombBot.csproj",
+  "projectFilePath": "Y:\\Danny\\repos\\BombBot\\BombBot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Danny\\.nuget\\packages\\dsharpplus\\4.0.1\\dsharpplus.4.0.1.nupkg.sha512",
     "C:\\Users\\Danny\\.nuget\\packages\\emzi0767.common\\2.6.1\\emzi0767.common.2.6.1.nupkg.sha512",
+    "C:\\Users\\Danny\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+    "C:\\Users\\Danny\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Danny\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Danny\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
     "C:\\Users\\Danny\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

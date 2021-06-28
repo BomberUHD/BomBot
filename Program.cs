@@ -1,12 +1,18 @@
-﻿using System;
+﻿using BombBot.Events;
+using DSharpPlus;
+using DSharpPlus.EventArgs;
+using Emzi0767.Utilities;
+using System;
+using System.Threading.Tasks;
 
 namespace BombBot
 {
     class Program
     {
-        static void Main(string[] args)
+
+        static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            await new BombBot().MainAsync();
         }
     }
 }

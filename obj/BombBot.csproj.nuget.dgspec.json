@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\repo\\BombBot\\BombBot.csproj": {}
+    "Y:\\Danny\\repos\\BombBot\\BombBot.csproj": {}
   },
   "projects": {
-    "E:\\repo\\BombBot\\BombBot.csproj": {
+    "Y:\\Danny\\repos\\BombBot\\BombBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\repo\\BombBot\\BombBot.csproj",
+        "projectUniqueName": "Y:\\Danny\\repos\\BombBot\\BombBot.csproj",
         "projectName": "BombBot",
-        "projectPath": "E:\\repo\\BombBot\\BombBot.csproj",
+        "projectPath": "Y:\\Danny\\repos\\BombBot\\BombBot.csproj",
         "packagesPath": "C:\\Users\\Danny\\.nuget\\packages\\",
-        "outputPath": "E:\\repo\\BombBot\\obj\\",
+        "outputPath": "Y:\\Danny\\repos\\BombBot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Danny\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "DSharpPlus": {
               "target": "Package",
               "version": "[4.0.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.1, )"
             }
           },
           "imports": [
