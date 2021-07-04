@@ -1,2 +1,2 @@
-# BombBot
+# BomBot
 Just testing C# Discord Libraries
