@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BombBot.Events
+namespace BomBot.Events
 {
     public class DiscordEventHandler
     {

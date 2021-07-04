@@ -1,18 +1,18 @@
-﻿using BombBot.Events;
+﻿using BomBot.Events;
 using DSharpPlus;
 using DSharpPlus.EventArgs;
 using Emzi0767.Utilities;
 using System;
 using System.Threading.Tasks;
 
-namespace BombBot
+namespace BomBot
 {
     class Program
     {
 
         static async Task Main(string[] args)
         {
-            await new BombBot().MainAsync();
+            await new BomBot().MainAsync();
         }
     }
 }

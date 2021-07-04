@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qJZ5Q/03WUm8SSCbllCFTE4179SXhLJtIqr7gZGavErNVmaygrI6JpbkEZc6NnrCn2UnZJFNayvMU8Un39RnjA==",
+  "dgSpecHash": "/CgDyb7nEgMB+R0vALyw9MhcbRHp6Q6sigQX5vFMmampVIhAaMjfA3EC5Z28DosxGgMXHDJiJOx3Hoso0MuJHA==",
   "success": true,
-  "projectFilePath": "Y:\\Danny\\repos\\BombBot\\BombBot.csproj",
+  "projectFilePath": "Y:\\Danny\\repos\\BomBot\\BomBot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Danny\\.nuget\\packages\\dsharpplus\\4.0.1\\dsharpplus.4.0.1.nupkg.sha512",
     "C:\\Users\\Danny\\.nuget\\packages\\emzi0767.common\\2.6.1\\emzi0767.common.2.6.1.nupkg.sha512",

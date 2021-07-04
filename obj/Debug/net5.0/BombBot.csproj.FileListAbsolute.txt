@@ -40,10 +40,6 @@ Y:\Danny\repos\obj\Debug\net5.0\BombBot.dll
 Y:\Danny\repos\obj\Debug\net5.0\ref\BombBot.dll
 Y:\Danny\repos\obj\Debug\net5.0\BombBot.pdb
 Y:\Danny\repos\obj\Debug\net5.0\BombBot.genruntimeconfig.cache
-Y:\Danny\repos\BombBot\obj\Debug\net5.0\BombBot.GeneratedMSBuildEditorConfig.editorconfig
-Y:\Danny\repos\BombBot\obj\Debug\net5.0\BombBot.AssemblyInfoInputs.cache
-Y:\Danny\repos\BombBot\obj\Debug\net5.0\BombBot.AssemblyInfo.cs
-Y:\Danny\repos\BombBot\obj\Debug\net5.0\BombBot.csproj.CoreCompileInputs.cache
 Y:\Danny\repos\BombBot\bin\Debug\net5.0\BombBot.exe
 Y:\Danny\repos\BombBot\bin\Debug\net5.0\BombBot.deps.json
 Y:\Danny\repos\BombBot\bin\Debug\net5.0\BombBot.runtimeconfig.json
@@ -57,7 +53,10 @@ Y:\Danny\repos\BombBot\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection
 Y:\Danny\repos\BombBot\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 Y:\Danny\repos\BombBot\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
 Y:\Danny\repos\BombBot\bin\Debug\net5.0\Newtonsoft.Json.dll
-Y:\Danny\repos\BombBot\obj\Debug\net5.0\BombBot.csproj.AssemblyReference.cache
+Y:\Danny\repos\BombBot\obj\Debug\net5.0\BombBot.GeneratedMSBuildEditorConfig.editorconfig
+Y:\Danny\repos\BombBot\obj\Debug\net5.0\BombBot.AssemblyInfoInputs.cache
+Y:\Danny\repos\BombBot\obj\Debug\net5.0\BombBot.AssemblyInfo.cs
+Y:\Danny\repos\BombBot\obj\Debug\net5.0\BombBot.csproj.CoreCompileInputs.cache
 Y:\Danny\repos\BombBot\obj\Debug\net5.0\BombBot.csproj.CopyComplete
 Y:\Danny\repos\BombBot\obj\Debug\net5.0\BombBot.dll
 Y:\Danny\repos\BombBot\obj\Debug\net5.0\ref\BombBot.dll

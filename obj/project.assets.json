@@ -4182,11 +4182,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Y:\\Danny\\repos\\BombBot\\BombBot.csproj",
-      "projectName": "BombBot",
-      "projectPath": "Y:\\Danny\\repos\\BombBot\\BombBot.csproj",
+      "projectUniqueName": "Y:\\Danny\\repos\\BomBot\\BomBot.csproj",
+      "projectName": "BomBot",
+      "projectPath": "Y:\\Danny\\repos\\BomBot\\BomBot.csproj",
       "packagesPath": "C:\\Users\\Danny\\.nuget\\packages\\",
-      "outputPath": "Y:\\Danny\\repos\\BombBot\\obj\\",
+      "outputPath": "Y:\\Danny\\repos\\BomBot\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Danny\\AppData\\Roaming\\NuGet\\NuGet.Config",

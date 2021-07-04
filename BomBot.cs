@@ -1,4 +1,4 @@
-﻿using BombBot.Events;
+﻿using BomBot.Events;
 using DSharpPlus;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BombBot
+namespace BomBot
 {
-    class BombBot
+    class BomBot
     {
         public DiscordClient discord;
         private IServiceProvider service;
-        public BombBot()
+        public BomBot()
         {
             discord = new DiscordClient(new DiscordConfiguration()
             {
