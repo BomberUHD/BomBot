@@ -24,11 +24,11 @@ namespace BomBot.Events
         {
             if (e.Message.Content.ToLower().StartsWith("ping"))
                 await e.Message.RespondAsync("pong!");
-            if (e.Message.Content.ToLower().StartsWith("!r"))
+            if (e.Message.Content.ToLower().StartsWith("!bomb"))
             {
                 if (e.MentionedRoles.Count != 2)
                 {
-                    await e.Message.RespondAsync("Invalid amount of Roles mentioned.");
+                    await e.Message.RespondAsync("Invalid Syntax: !bomb `hasthisRole` `getsremovedRole`");
                 }
                 else
                 {
@@ -44,32 +44,27 @@ namespace BomBot.Events
 
         public async Task RemoveRoles(DiscordClient s, MessageCreateEventArgs e)
         {
-            List<DiscordRole> x = e.MentionedRoles.ToList<DiscordRole>();
-            DiscordRole hasthisRole = x.First();
-            DiscordRole getsremovedRole = x.Last();
-            int i = 0;
             string memberlist = "";
-
             var members = GetMembers(s, e);
+
+            var hasthisRole = e.MentionedRoles.First<DiscordRole>();
+            var getsremovedRole = e.MentionedRoles.Last<DiscordRole>();
+
             foreach (DiscordMember member in members.Result)
             {
+                var allRoles = member.Roles.ToList<DiscordRole>();
 
-                if (member.IsBot)
+                if (allRoles.Contains(hasthisRole) && allRoles.Contains(getsremovedRole))
                 {
-                    var allRoles = member.Roles.ToList<DiscordRole>();
-                    if (allRoles.Contains(e.MentionedRoles.First<DiscordRole>()) && allRoles.Contains(e.MentionedRoles.Last<DiscordRole>()))
-                    {
-                        string temp = String.Format("User {0} contains {1} & {2}", member.Username, e.MentionedRoles.First<DiscordRole>().Mention, e.MentionedRoles.Last<DiscordRole>().Mention);
-                        await e.Message.RespondAsync(temp);
-                    }
-                }
-                else
-                {
-                    memberlist += "\n" + member.Username;
-                }
+                    string commandissued = string.Format("Remove Role Command issued by {0}", e.Author.Username);
+                    await member.RevokeRoleAsync(e.MentionedRoles.Last<DiscordRole>(), commandissued);
 
+                    if (!member.IsBot)
+                        memberlist += "\n" + member.Username;
+                }
             }
-            //await e.Message.RespondAsync(memberlist + "\nTotal Users: " + members.Result.Count());
+            string response = string.Format("Removed {0} from these Users:{1}", getsremovedRole.Mention, memberlist);
+            await e.Message.RespondAsync(response);
 
         }
 
