@@ -1,5 +1,7 @@
-﻿using BomBot.Events;
+﻿using BomBot.Commands;
+using BomBot.Events;
 using DSharpPlus;
+using DSharpPlus.CommandsNext;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -25,8 +27,15 @@ namespace BomBot
         }
         public async Task MainAsync()
         {
-            var dcEventHandler = service.GetRequiredService<DiscordEventHandler>();
-            await dcEventHandler.setupAsync();
+            var commands = discord.UseCommandsNext(new CommandsNextConfiguration()
+            {
+                StringPrefixes = new[] { "§" }
+            });
+
+            commands.RegisterCommands<MyFirstModule>();
+
+            //var dcEventHandler = service.GetRequiredService<DiscordEventHandler>();
+            //await dcEventHandler.setupAsync();
             await discord.ConnectAsync();
             await Task.Delay(-1);
         }

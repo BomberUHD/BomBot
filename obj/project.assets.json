@@ -21,6 +21,19 @@
           "lib/netstandard2.0/DSharpPlus.dll": {}
         }
       },
+      "DSharpPlus.CommandsNext/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "DSharpPlus": "4.0.1",
+          "Microsoft.Extensions.DependencyInjection": "5.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/DSharpPlus.CommandsNext.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/DSharpPlus.CommandsNext.dll": {}
+        }
+      },
       "Emzi0767.Common/2.6.1": {
         "type": "package",
         "dependencies": {
@@ -36,7 +49,7 @@
           "lib/netcoreapp2.1/Emzi0767.Common.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection/5.0.1": {
+      "Microsoft.Extensions.DependencyInjection/5.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
@@ -1211,6 +1224,19 @@
         "lib/netstandard2.0/DSharpPlus.xml"
       ]
     },
+    "DSharpPlus.CommandsNext/4.0.1": {
+      "sha512": "tsvf4gjwwysTgXvdNwtm983DpkLG4MwZ6DMomKw/w1eouaKrxQ0IVS1NL7WBSUuYLFbi4kusanYl9Nbv3ur0lA==",
+      "type": "package",
+      "path": "dsharpplus.commandsnext/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dsharpplus.commandsnext.4.0.1.nupkg.sha512",
+        "dsharpplus.commandsnext.nuspec",
+        "lib/netstandard2.0/DSharpPlus.CommandsNext.dll",
+        "lib/netstandard2.0/DSharpPlus.CommandsNext.xml"
+      ]
+    },
     "Emzi0767.Common/2.6.1": {
       "sha512": "1TcKpiQ8MZ8VasyWVWbvNcaECPwNDd/fKVLSCn4fblivrPR8R35ElAroqKYAiENyD7HfYMZNCvoKAq++bpP9AA==",
       "type": "package",
@@ -1228,10 +1254,10 @@
         "lib/netstandard2.0/Emzi0767.Common.xml"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection/5.0.1": {
-      "sha512": "//mDNrYeiJ0eh/awFhDFJQzkRVra/njU5Y4fyK7X29g5HScrzbUkKOKlyTtygthcGFt4zNC8G5CFCjb/oizomA==",
+    "Microsoft.Extensions.DependencyInjection/5.0.2": {
+      "sha512": "xzFW00AZEvOXM1OX+0+AYH5op/Hf3u//e6wszBd/rK72sypD+jx5CtsHxM4BVuFBEs8SajfO4QzSJtrQaHDr4A==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection/5.0.1",
+      "path": "microsoft.extensions.dependencyinjection/5.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1246,7 +1272,7 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
-        "microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -4173,23 +4199,24 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "DSharpPlus >= 4.0.1",
-      "Microsoft.Extensions.DependencyInjection >= 5.0.1"
+      "DSharpPlus.CommandsNext >= 4.0.1",
+      "Microsoft.Extensions.DependencyInjection >= 5.0.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Danny\\.nuget\\packages\\": {}
+    "C:\\Users\\Dilvi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Y:\\Danny\\repos\\BomBot\\BomBot.csproj",
+      "projectUniqueName": "C:\\Danny\\repos\\BomBot\\BomBot.csproj",
       "projectName": "BomBot",
-      "projectPath": "Y:\\Danny\\repos\\BomBot\\BomBot.csproj",
-      "packagesPath": "C:\\Users\\Danny\\.nuget\\packages\\",
-      "outputPath": "Y:\\Danny\\repos\\BomBot\\obj\\",
+      "projectPath": "C:\\Danny\\repos\\BomBot\\BomBot.csproj",
+      "packagesPath": "C:\\Users\\Dilvi\\.nuget\\packages\\",
+      "outputPath": "C:\\Danny\\repos\\BomBot\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Danny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dilvi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4219,9 +4246,13 @@
             "target": "Package",
             "version": "[4.0.1, )"
           },
+          "DSharpPlus.CommandsNext": {
+            "target": "Package",
+            "version": "[4.0.1, )"
+          },
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
-            "version": "[5.0.1, )"
+            "version": "[5.0.2, )"
           }
         },
         "imports": [
@@ -4239,7 +4270,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

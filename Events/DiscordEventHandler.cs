@@ -24,11 +24,11 @@ namespace BomBot.Events
         {
             if (e.Message.Content.ToLower().StartsWith("ping"))
                 await e.Message.RespondAsync("pong!");
-            if (e.Message.Content.ToLower().StartsWith("!bomb"))
+            if (e.Message.Content.ToLower().StartsWith("§remove"))
             {
                 if (e.MentionedRoles.Count != 2)
                 {
-                    await e.Message.RespondAsync("Invalid Syntax: !bomb `hasthisRole` `getsremovedRole`");
+                    await e.Message.RespondAsync("Invalid Syntax: §remove `hasthisRole` `getsremovedRole`");
                 }
                 else
                 {
