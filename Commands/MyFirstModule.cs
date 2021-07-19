@@ -57,5 +57,10 @@ namespace BomBot.Commands
 			string response = string.Format("Removed {0} from these Users:{1}\nand these Bots:{2}", getsremovedRole.Mention, memberlist, botlist);
 			await ctx.RespondAsync(response);
 		}
+		[Command("remove")]
+		public async Task RemoveRoleCommand(CommandContext ctx, params string[] names)
+		{
+			ctx.RespondAsync("Invalid Syntax: §remove `hasthisRole` `getsremovedRole`");
+		}
 	}
 }
