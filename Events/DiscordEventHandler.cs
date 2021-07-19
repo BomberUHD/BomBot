@@ -44,28 +44,27 @@ namespace BomBot.Events
 
         public async Task RemoveRoles(DiscordClient s, MessageCreateEventArgs e)
         {
-            string memberlist = "";
-            var members = GetMembers(s, e);
+            //string memberlist = "";
+            //var members = GetMembers(s, e);
 
-            var hasthisRole = e.MentionedRoles.First<DiscordRole>();
-            var getsremovedRole = e.MentionedRoles.Last<DiscordRole>();
+            //var hasthisRole = e.MentionedRoles.First<DiscordRole>();
+            //var getsremovedRole = e.MentionedRoles.Last<DiscordRole>();
 
-            foreach (DiscordMember member in members.Result)
-            {
-                var allRoles = member.Roles.ToList<DiscordRole>();
+            //foreach (DiscordMember member in members.Result)
+            //{
+            //    var allRoles = member.Roles.ToList<DiscordRole>();
 
-                if (allRoles.Contains(hasthisRole) && allRoles.Contains(getsremovedRole))
-                {
-                    string commandissued = string.Format("Remove Role Command issued by {0}", e.Author.Username);
-                    await member.RevokeRoleAsync(e.MentionedRoles.Last<DiscordRole>(), commandissued);
+            //    if (allRoles.Contains(hasthisRole) && allRoles.Contains(getsremovedRole))
+            //    {
+            //        string commandissued = string.Format("Remove Role Command issued by {0}", e.Author.Username);
+            //        await member.RevokeRoleAsync(e.MentionedRoles.Last<DiscordRole>(), commandissued);
 
-                    if (!member.IsBot)
-                        memberlist += "\n" + member.Username;
-                }
-            }
-            string response = string.Format("Removed {0} from these Users:{1}", getsremovedRole.Mention, memberlist);
-            await e.Message.RespondAsync(response);
-
+            //        if (!member.IsBot)
+            //            memberlist += "\n" + member.Username;
+            //    }
+            //}
+            //string response = string.Format("Removed {0} from these Users:{1}", getsremovedRole.Mention, memberlist);
+            //await e.Message.RespondAsync(response);
         }
 
         public async Task<IReadOnlyCollection<DiscordMember>> GetMembers(DiscordClient s, MessageCreateEventArgs e)

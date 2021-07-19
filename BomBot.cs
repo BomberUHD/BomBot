@@ -29,6 +29,7 @@ namespace BomBot
         {
             var commands = discord.UseCommandsNext(new CommandsNextConfiguration()
             {
+                Services = service,
                 StringPrefixes = new[] { "§" }
             });
 
@@ -45,8 +46,11 @@ namespace BomBot
                 .AddSingleton(this)
                 .AddSingleton(discord)
                 .AddSingleton<DiscordEventHandler>()
+                .AddSingleton<Random>()
                 .BuildServiceProvider();
             return services;
         }
+
+
     }
 }
