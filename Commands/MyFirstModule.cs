@@ -1,12 +1,13 @@
 ﻿using DSharpPlus;
 using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
-using DSharpPlus.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DSharpPlus.Entities;
+using DSharpPlus.Interactivity.Extensions;
 
 namespace BomBot.Commands
 {
@@ -60,7 +61,33 @@ namespace BomBot.Commands
 		[Command("remove")]
 		public async Task RemoveRoleCommand(CommandContext ctx, params string[] names)
 		{
-			ctx.RespondAsync("Invalid Syntax: §remove `hasthisRole` `getsremovedRole`");
+			await ctx.RespondAsync("Invalid Syntax: §remove `hasthisRole` `getsremovedRole`");
 		}
+
+		[Command("button")]
+		public async Task CreateButtonMessage(CommandContext ctx, params string[] names)
+		{
+            var myButton = new DiscordButtonComponent(ButtonStyle.Primary, "my_very_cool_button", "Very cool button!");
+
+            var builder = new DiscordMessageBuilder()
+                .WithContent("This message has buttons! Pretty neat innit?")
+                .AddComponents(myButton);
+
+            var message = await builder.SendAsync(ctx.Channel);
+
+
+			var buttonRes = await message.WaitForButtonAsync();
+			Console.WriteLine(message);
+
+            if (!buttonRes.TimedOut)
+            {
+                await buttonRes.Result.Interaction.CreateResponseAsync(InteractionResponseType.DeferredMessageUpdate);
+                await message.ModifyAsync("✅ WaitForButtonAsync() passed");
+            }
+            else
+            {
+                await message.ModifyAsync("❎ WaitForButtonAsync() failed");
+            }
+        }
 	}
 }
